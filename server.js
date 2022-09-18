@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 const passport = require("passport");
 
 const initPassport = require("./passport config")
-initPassport(passport, (email,));
+initPassport(passport, (email));
 
 const users = [];
 
