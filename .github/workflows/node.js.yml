@@ -34,7 +34,6 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: push guyyefet/my_rep
-        tags: v1, latest
         registry: registry-url.io
         dockerfile: Dockerfile.ci
         username: ${{ secrets.DOCKER_USERNAME }}
