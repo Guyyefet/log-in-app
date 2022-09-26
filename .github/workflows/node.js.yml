@@ -45,7 +45,7 @@ jobs:
       env:
         REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         REPOSITORY: node-server
-        IMAGE_TAG: ${{ github.sha }}
+        IMAGE_TAG: nodejs_login_service
       run: |
         docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
         docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
