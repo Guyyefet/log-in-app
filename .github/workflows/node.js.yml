@@ -30,6 +30,14 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
+    # - name: Create .env.production file
+    #   uses: SpicyPizza/create-envfile@v1.3
+    #   with:
+    #     envkey_SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
+    #     directory: ./server/
+    #     file_name: .env.production
+    #     fail_on_empty: false
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
