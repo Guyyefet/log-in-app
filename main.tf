@@ -21,7 +21,7 @@ resource "aws_instance" "example" {
   }
 }
 
-Resource "aws_s3_bucket" "my first s3 bucket" {
+resource "aws_s3_bucket" "my first s3 bucket" {
   bucket = "my-tf-test-bucket"
     tags = {
     Name        = "My bucket"
