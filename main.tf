@@ -21,19 +21,20 @@ resource "aws_instance" "example" {
   }
 }
 
-resource "aws_s3_bucket" "my first s3 bucket" {
-  bucket = "my-tf-test-bucket"
-    tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
+# resource "aws_s3_bucket" "my-first-s3-bucket" {
+#   bucket = "my-tf-test-bucket"
+#     tags = {
+#     Name        = "My bucket"
+#     Environment = "Dev"
+#   }
+# }
 
-resource "aws_db_instance" "my-first-db" {
-  allocated_storage    = 10
-  db_name              = "my-first-db"
-   engine               = "PostgreSQL"
-}
+# resource "aws_db_instance" "my-first-db" {
+#   allocated_storage    = 10
+#   engine               = "PostgreSQL"
+#   instance_class       = "db.t3.micro"
+#   db_name              = "my-first-db"
+# }
 
 # Main VPC
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc
