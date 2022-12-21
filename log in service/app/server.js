@@ -6,8 +6,6 @@ const passport = require("passport");
 const initPassport = require("./passport config")
 initPassport(passport, (email));
 
-const users = [];
-
 app.set("view-engine", "ejs");
 app.use(express.urlencoded({ extended: false}));
 
